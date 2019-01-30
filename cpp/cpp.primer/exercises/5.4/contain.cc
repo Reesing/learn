@@ -24,9 +24,21 @@ int main()
         svec = vint1;
     }
 
-    bool long_contain_short = false;
+    bool long_contain_short = true;
     for (decltype(svec.size()) i=0;i!=svec.size();++i)
     {
-        
+        if (svec[i]!=lvec[i])
+        {
+            long_contain_short = false;
+            break;
+        }
     }
+
+    cout << long_contain_short << endl;
+    //if (long_contain_short)
+    //    cout << "Contain!" << endl;
+    //else
+    //    cout << "Not contain!" << endl;
+
+    return 0;
 }
