@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <initializer_list>
 #include "Func.h"
 using namespace std;
 
@@ -38,6 +39,8 @@ int main()
     swapByPointer(wp,zp);
     cout << "Swap result: " << w << " " << z << endl;
 
+    // Ex 6.27
+    cout << "6.27 Sum of 1,2,3,4,5 is " << sumInitList({1,2,3,4,5}) << endl;
 
     return 0;
 }

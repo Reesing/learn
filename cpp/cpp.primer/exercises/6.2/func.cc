@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <initializer_list>
 #include "Func.h"
 using namespace std;
 
@@ -48,3 +49,12 @@ void swapByPointer(int *ap,int *bp)
     *bp = *ap;
     *ap = c; 
 }
+
+int sumInitList(initializer_list<int> il)
+{
+    int sum = 0;
+    for (auto beg=il.begin();beg!=il.end();++beg)
+        sum += *beg;
+    return sum;
+}
+

@@ -1,4 +1,5 @@
 #include <string>
+#include <initializer_list>
 #ifndef FUNCS
 #define FUNCS
 
@@ -8,5 +9,6 @@ bool containCapital(std::string);
 void toLower(std::string&);
 int larger(int,int*);
 void swapByPointer(int*,int*);
+int sumInitList(std::initializer_list<int>);
 
 #endif
