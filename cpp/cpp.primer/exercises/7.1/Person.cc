@@ -3,6 +3,9 @@
 using namespace std;
 
 struct Person {
+    Person(const string &name,const string &address): name(name), address(address) {}
+
+
     string getName() const {return name;};
     string getAddress() const {return address;};
     // Last two member functions should be const, since they won't change the object.
@@ -22,9 +25,10 @@ ostream &print(ostream &os,const Person &person){
 }
 
 int main(){
-    Person a;
-    while(read(cin,a))
-        print(cout,a);
+    Person a("Tom","New York");
+    print(cout,a);
+    //while(read(cin,a))
+    //    print(cout,a);
 
     return 0;
 }
